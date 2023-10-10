@@ -59,7 +59,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
         const newArray = [...items];
         newArray[index].title = inputValue;
         newArray[index].complete = !newArray[index].complete,
-        setItems(newArray)
+            setItems(newArray)
         setInputValue("")
     };
     const editToggleItem = (id: string) => {

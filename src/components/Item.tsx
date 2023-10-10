@@ -9,7 +9,7 @@ const Item = () => {
         <div className='flex flex-wrap gap-4 justify-center p-2' >
             {
                 items.map((item) => (
-                    <div className={`flex flex-col justify-between bg-gray-300 h-[150px] w-[250px] rounded-xl text-sm p-2   ${item.complete ? "border-l-8 border-r-8 border-yellow-500":"border-l-8 border-r-8 border-green-500"}`} key={item.id}>
+                    <div className={`flex flex-col justify-between bg-gray-300 h-[150px] w-[250px] rounded-xl text-sm p-2   ${item.complete ? "border-l-8 border-r-8 border-yellow-500" : "border-l-8 border-r-8 border-green-500"}`} key={item.id}>
                         <p className='font-bold container '>{item.title}</p>
                         <span className='flex items-center justify-center gap-6'>
                             <FaTrashAlt className="text-xl text-red-400 cursor-pointer" onClick={() => deleteItems(item.id)} />
