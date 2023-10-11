@@ -3,10 +3,10 @@ import { AppContext } from '@/AppContext'
 import React, { useContext } from 'react'
 
 const TopForm = () => {
-    const { inputValue, getInputValue, addItems } = useContext(AppContext)
+    const { inputValue, getInputValue, addItems, theme } = useContext(AppContext)
 
     return (
-        <div className='bg-slate-600 px-6 py-8 rounded-xl flex justify-between'>
+        <div className={`px-6 py-8 rounded-xl flex justify-between ${theme ? "bg-blue-400" : "bg-slate-600"}`}>
             <div className='bg-gray-200 w-full rounded-xl flex justify-between'>
                 <input
                     className='bg-transparent outline-none pl-2 w-full'

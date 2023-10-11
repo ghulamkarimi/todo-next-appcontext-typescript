@@ -8,7 +8,7 @@ import TopForm from "@/components/TopForm"
 import Item from "@/components/Item"
 
 const page = () => {
-  const { theme, setTheme } = useContext(AppContext);
+  const { theme} = useContext(AppContext);
   return (
     <div className={`h-screen flex w-full items-center pt-24 gap-6 flex-col  ${theme ? "bg-blue-300" : "bg-slate-400"}`}>
       <DarkMode />
